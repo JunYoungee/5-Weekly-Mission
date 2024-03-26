@@ -1,4 +1,4 @@
-import { email, emailTag, pw, passwordTag, checkEmail, APIPATH, emailNotice, passwordNotice } from './common.js';
+import { email, pw, checkEmail, APIPATH, emailNotice, passwordNotice } from './common.js';
 
 // 로그인 button
 const loginBtn = document.querySelector('.login-btn');
@@ -57,6 +57,7 @@ const attemptLogin = async (e) => {
 
         const data = await response.json();
         localStorage.setItem('accessToken', data.data.accessToken);
+
         location.href = '../folder.html';
     } catch (error) {
         email.classList.add('active');

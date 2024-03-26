@@ -1,22 +1,7 @@
-:root {
-    --primary-color: #6d6afe;
-    --red-color: #ff5b56;
-    --black-color: #111322;
-    --white-color: #ffffff;
-    --gray-color-darkest: #3e4e43;
-    --gray-color-darker: #9fa6b2;
-    --gray-color: #ccd5e3;
-    --gray-color-lighter: #e7effb;
-    --gray-color-lightest: #f0f6ff;
-    --Grey-Light: #f5f5f5;
-}
-
-* {
-    box-sizing: border-box;
-}
+@import url('./reset.css');
+@import url('./color.css');
 
 body {
-    margin: 0;
     background: var(--Linkbrary-bg, #f0f6ff);
     display: flex;
     padding: 238px 520px 253px;
@@ -24,11 +9,7 @@ body {
     align-items: center;
 }
 
-p {
-    margin: 0;
-}
-
-.signupContainor {
+.signup-containor {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,19 +23,19 @@ p {
     gap: 30px;
 }
 
-.area1 {
+.first-area {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
 }
 
-.area1 img {
+.first-area img {
     width: 210.583px;
     height: 38px;
 }
 
-.area1 p {
+.first-area p {
     color: var(--black, #000);
     font-family: Pretendard;
     font-size: 16px;
@@ -63,7 +44,7 @@ p {
     line-height: 24px; /* 150% */
 }
 
-.signinBtn {
+.signin-btn {
     color: var(--Linkbrary-primary-color, #6d6afe);
     font-family: Pretendard;
     font-size: 16px;
@@ -72,11 +53,20 @@ p {
     line-height: normal;
 }
 
-.area2 {
+.second-area {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+}
+
+.active {
+    border-color: red !important;
+}
+.email-notice,
+.password-notice,
+.verify-notice {
+    color: red !important;
 }
 
 .label {
@@ -95,7 +85,7 @@ p {
     line-height: normal;
 }
 
-.area2 input {
+.second-area input {
     display: flex;
     width: 400px;
     padding: 18px 15px;
@@ -116,7 +106,7 @@ p {
     margin-left: 365px;
 }
 
-.signupBtn {
+.signup-btn {
     display: flex;
     width: 400px;
     padding: 16px 20px;
@@ -124,10 +114,7 @@ p {
     align-items: center;
     gap: 10px;
     border-radius: 8px;
-    background: var(
-        --gra-purpleblue-to-skyblue,
-        linear-gradient(91deg, #6d6afe 0.12%, #6ae3fe 101.84%)
-    );
+    background: var(--gra-purpleblue-to-skyblue, linear-gradient(91deg, #6d6afe 0.12%, #6ae3fe 101.84%));
     color: var(--Grey-Light, #f5f5f5);
     font-family: Pretendard;
     font-size: 18px;
@@ -137,11 +124,11 @@ p {
     border: none;
 }
 
-.signupBtn:hover {
+.signup-btn:hover {
     cursor: pointer;
 }
 
-.snsSignup {
+.sns-signup {
     display: flex;
     width: 400px;
     padding: 12px 24px;
@@ -152,7 +139,7 @@ p {
     background: var(--Linkbrary-gray10, #e7effb);
 }
 
-.snsSignup p {
+.sns-signup p {
     color: var(--Linkbrary-gray100, #373740);
     font-family: Pretendard;
     font-size: 14px;
@@ -161,19 +148,19 @@ p {
     line-height: normal;
 }
 
-.signupIcon {
+.signup-icon {
     display: flex;
     align-items: flex-start;
     gap: 16px;
 }
 
-.googleSignup {
+.google-signup {
     width: 42px;
     height: 42px;
     flex-shrink: 0;
 }
 
-.kakaooSignup {
+.kakaoo-signup {
     width: 26px;
     height: 24px;
     flex-shrink: 0;
@@ -183,7 +170,7 @@ p {
     body {
         padding: 0;
     }
-    .signupContainor {
+    .signup-containor {
         width: 100%;
         padding: 150px 32px;
     }
