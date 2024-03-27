@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Linkbrary</title>
+        <link rel="stylesheet" href="/src/css/signin.css" />
+    </head>
+    <body>
+        <div class="signin-containor">
+            <div class="login">
+                <div class="first-area">
+                    <a href="/"><img src="/src/img/logo.svg" alt="LinkbraryLogo" /></a>
+                    <p>
+                        회원이 아니신가요?
+                        <a href="/signup.html" class="signup-btn">회원 가입하기</a>
+                    </p>
+                </div>
+                <div class="second-area">
+                    <label class="label">
+                        <p>이메일</p>
+                        <input class="id" type="text" name="id" placeholder="이메일 입력" />
+                        <p class="email-notice"></p>
+                    </label>
+                    <label class="label">
+                        <p>비밀번호</p>
+                        <input class="password" type="password" name="password" placeholder="비밀번호 입력" />
+                        <img src="/src/img/noeyes.svg" alt="비밀번호 보기" class="eyes password-eyes" />
+                        <p class="password-notice"></p>
+                    </label>
+                </div>
+                <button class="login-btn">로그인</button>
+            </div>
+            <div class="sns-login">
+                <p>소셜 로그인</p>
+                <div class="snsIcon">
+                    <a href="https://www.google.com/" class="google-login">
+                        <img src="/src/img/googleLogin.png" alt="구글 로그인" />
+                    </a>
+                    <a href="https://www.kakaocorp.com/page/" class="kakao-login">
+                        <img src="/src/img/kakaoLogin.png" alt="카카오 로그인" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="./src/script/signin.js"></script>
+    </body>
+</html>
