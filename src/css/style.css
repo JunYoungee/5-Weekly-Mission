@@ -86,14 +86,14 @@ header {
     text-decoration-line: none;
 }
 
-.main-content-img {
+.main-img {
     width: 1200px;
     height: 590px;
     padding: 50px 41px;
     overflow: hidden;
 }
 
-.main-content-img img {
+.main-content-img {
     width: 1118px;
     height: 659px;
     flex-shrink: 0;
@@ -270,13 +270,14 @@ footer {
         padding-right: 113px;
     }
 
-    .main-content-img {
+    .main-img {
         width: 698px;
         height: 343px;
+        padding: 29px 24px;
         overflow: hidden;
     }
 
-    .main-content-img img {
+    .main-content-img {
         width: 650px;
         height: 383px;
         flex-shrink: 0;
